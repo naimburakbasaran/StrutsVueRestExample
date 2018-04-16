@@ -7,9 +7,9 @@
 <body>
 
 <div id='app'>
-    <p>{{message.title}}</p>
+    <p>{{message.title}} Play</p>
 </div>
-s
+
 
 <script>
 
