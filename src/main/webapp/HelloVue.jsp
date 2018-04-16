@@ -9,7 +9,7 @@
 <div id='app'>
     <p>{{message.title}}</p>
 </div>
-
+test
 
 <script>
 
