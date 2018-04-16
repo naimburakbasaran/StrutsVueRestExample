@@ -7,7 +7,11 @@
 <body>
 
 <div id='app'>
-    <p>{{message.title}} Play</p>
+    <p>{{message}}</p>
+    <template v-for="inner in message.innerList">
+        <li>{{inner.title}}</li>
+
+    </template>
 </div>
 
 
@@ -20,16 +24,17 @@
     var app = new Vue({
         el: "#app",
         data: {
-            message: []
+            message: { title: String, innerList: [ { title: String } ] }
         },
         methods: {
             work(){
-                alert(url);
                 console.log(this);
                 this.$http.get(url).then(function(response){
                     this.message = response.data;
+                    //alert(response.data);
+
                 }, function(error){
-                    alert(error.statusText);
+                    //alert(error.statusText);
                 });
             }
         },
