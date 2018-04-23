@@ -1,10 +1,20 @@
-package com.mkyong.common.action;
+package com.mkyong.common.Entity;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
 
 @XmlRootElement()
 public class TestEntity {
 private  String title;
+private ArrayList<TestInner> innerList;
+
+    public ArrayList<TestInner> getInnerList() {
+        return innerList;
+    }
+
+    public void setInnerList(ArrayList<TestInner> innerList) {
+        this.innerList = innerList;
+    }
 
     public TestEntity() {
     }

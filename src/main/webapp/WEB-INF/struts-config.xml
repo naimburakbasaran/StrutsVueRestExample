@@ -15,7 +15,7 @@
 			type="com.mkyong.common.action.HelloWorldAction"
 			name="helloWorldForm">
 			<forward name="success" path="/HelloWorld.jsp"/>
-			<forward name="successVue" path="/HelloVue.jsp"/>
+			<forward name="successVue" path="/pages/quickReservation/quickReservation.jsp"/>
 
 		</action>
 	</action-mappings>
